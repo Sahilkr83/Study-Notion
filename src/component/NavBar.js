@@ -23,21 +23,21 @@ const NavBar = ({isUserLogin,setUserLogin}) => {
 
         <div className='btndiv flex mx-3 gap-4'>
             { !isUserLogin &&
-                <NavLink to="/login">
+                <NavLink to="/login" className='no-underline'>
                     <button className='btn'>
                         Login
                     </button>
                 </NavLink>
             }
             {   !isUserLogin &&
-                <NavLink to="/signup">
+                <NavLink to="/signup" className='no-underline'>
                     <button className='btn text-nowrap'>
                         Sign up
                     </button>
                 </NavLink>
             }
             {  isUserLogin &&
-                <NavLink to="/" >
+                <NavLink to="/"  className='no-underline'>
                     <button className='btn text-nowrap' onClick={() =>{ 
                         setUserLogin(false)
                         toast.success("Logged Out")

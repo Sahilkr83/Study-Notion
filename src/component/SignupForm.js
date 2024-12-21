@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
-import {  useNavigate } from 'react-router-dom'
+import {  useNavigate,NavLink } from 'react-router-dom'
 import toast from 'react-hot-toast';
 import { IoEye,IoEyeOff } from "react-icons/io5";
 
@@ -43,14 +43,21 @@ const SignupForm = ({setUserLogin}) => {
 
     <div>
 
-        <div>
-            <button>
-                Student
-            </button>
+        <div className='bg-[#171d26] flex gap-4 w-fit py-[12px] px-[8px] rounded-[20px]'>
+            
+            <NavLink className='text-white no-underline p-1 rounded-[12px] bg-[#171d26]'>
+            
+                <button  >
+                    Student
+                </button>
+            </NavLink>
 
-            <button>
-                Instructor
-            </button>
+            <NavLink className='text-white no-underline p-1 rounded-[8px] bg-[#171d26]'>
+          
+                <button>
+                    Instructor
+                </button>
+            </NavLink>
         </div>
 
         <form onSubmit={SubmitHandler}>

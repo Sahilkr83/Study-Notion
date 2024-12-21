@@ -10,7 +10,7 @@ body{
 .btn{
 
     background-color: #161b27;
-    text-decoration: none;
+    text-decoration: dotted;
     color: white;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -42,7 +42,9 @@ button{
 
 .active{
     opacity: 1;
+
 }
+
 
 @media (max-width : 1050px){
     #bg-img{
